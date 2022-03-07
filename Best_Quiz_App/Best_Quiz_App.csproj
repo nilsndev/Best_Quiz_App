@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36F3D0B2-7609-4BF0-9001-A5761142A083}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Best_Quiz_App</RootNamespace>
+    <AssemblyName>Best_Quiz_App</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>330398_advice_customer services_customer support_faq_info_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainQuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainQuizForm.Designer.cs">
+      <DependentUpon>MainQuizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScoreForm.Designer.cs">
+      <DependentUpon>ScoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SomeMethods.cs" />
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainQuizForm.resx">
+      <DependentUpon>MainQuizForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScoreForm.resx">
+      <DependentUpon>ScoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spanien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brasilien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deutschland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frankreich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Italien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="330398_advice_customer services_customer support_faq_info_icon.ico" />
+    <Content Include="Images\Pinapple_image.jfif" />
+    <Content Include="Images\Poinsettia_image.jfif" />
+    <Content Include="Images\Rhododendron_image.jfif" />
+    <Content Include="Images\tagetes_image.jfif" />
+    <Content Include="Images\Zamioculcas_image.jfif" />
+    <Content Include="Images_Animal\ameisenbär.jpg" />
+    <Content Include="Images_Animal\belugawal.jpg" />
+    <Content Include="Images_Animal\blue_whale.jpg" />
+    <Content Include="Images\bogenhanf.png" />
+    <Content Include="Images\confed_cup.jfif" />
+    <Content Include="Images_Animal\elch.jfif" />
+    <Content Include="Images\em_2021.jfif" />
+    <Content Include="Images\erde.jpg" />
+    <Content Include="Images_Car\Audi_R8_blue_image.jpg" />
+    <Content Include="Images_Car\lambo_urus.jpg" />
+    <Content Include="Images_Car\rolls_royce_ghost.jfif" />
+    <Content Include="Images_Car\smart_image.jpg" />
+    <Content Include="Images_Car\tesla_model_x.jpg" />
+    <Content Include="Images_City\australia_flag.jfif" />
+    <Content Include="Images_City\austria_flag.jfif" />
+    <Content Include="Images_City\belarus_flag.jpg" />
+    <Content Include="Images_City\canada_flag.jfif" />
+    <Content Include="Images_City\japan_flag.png" />
+    <Content Include="Images_City\new_zeeland.png" />
+    <Content Include="Images_City\poland_flag.png" />
+    <Content Include="Images_City\russia_flag.png" />
+    <Content Include="Images_City\serbia_flag.png" />
+    <Content Include="Images_City\south_africa.jfif" />
+    <Content Include="Images_City\usa_flag.jpg" />
+    <Content Include="Images_ICT\amazon_logo.jpg" />
+    <Content Include="Images_ICT\android_app.jfif" />
+    <Content Include="Images_ICT\c++.png" />
+    <Content Include="Images_ICT\facebook_logo.jfif" />
+    <Content Include="Images\farn.jfif" />
+    <Content Include="Images\Ferrari_f8.jfif" />
+    <Content Include="Images\fichte.jpg" />
+    <Content Include="Images\Ford_Mustang.jfif" />
+    <Content Include="Images_ICT\fortnite_logo.png" />
+    <Content Include="Images\fussball.jfif" />
+    <Content Include="Images\ice_hockey.jfif" />
+    <Content Include="Images_ICT\ios_app.jfif" />
+    <Content Include="Images_ICT\konrad_zuse_pc.jfif" />
+    <Content Include="Images\lamborghini_huracan.jpg" />
+    <Content Include="Images\Lavendel.jpg" />
+    <Content Include="Images\mars.jpg" />
+    <Content Include="Images\mercedes_amg_gt.jfif" />
+    <Content Include="Images_ICT\linux_logo.jfif" />
+    <Content Include="Images_ICT\microsoft_logo.jfif" />
+    <Content Include="Images_ICT\minecraft.jfif" />
+    <Content Include="Images\monstera.jfif" />
+    <Content Include="Images\neptune.jpg" />
+    <Content Include="Images_Animal\Otter.jpg" />
+    <Content Include="Images_Animal\riesenhai.jfif" />
+    <Content Include="Images\rodrigo_koxa_wave.jpg" />
+    <Content Include="Images_Animal\roter_panda.jfif" />
+    <Content Include="Images\saturn.jfif" />
+    <Content Include="Images_Animal\See_elefant.jpg" />
+    <Content Include="Images_Animal\tapir.jfif" />
+    <Content Include="Images\toyota_mirai.jpg" />
+    <Content Include="Images\venus.jpg" />
+    <Content Include="Images_Animal\walhai.jfif" />
+    <Content Include="Images\world_cup.jpg" />
+    <Content Include="Images_Space\jupiter_planet.jpg" />
+    <Content Include="Images_Space\mercury_planet.jfif" />
+    <Content Include="Images_Space\uranus_planet.jpg" />
+    <Content Include="Images_Sport\champions_league.jfif" />
+    <None Include="Resources\fussball.png" />
+    <None Include="Resources\random_image.png" />
+    <None Include="Resources\space_ship.png" />
+    <None Include="Resources\sports_image.png" />
+    <None Include="Resources\plants.png" />
+    <None Include="Resources\earth_logo.png" />
+    <None Include="Resources\car logo.png" />
+    <None Include="Resources\elefant_button_logo.png" />
+    <None Include="Resources\computer.png" />
+    <None Include="Resources\log_out.png" />
+    <None Include="Resources\close_button.png" />
+    <None Include="Resources\password_user_lock_image.png" />
+    <None Include="Resources\user_profile_image.png" />
+    <None Include="Resources\computer_ict_pic.png" />
+    <None Include="Resources\earth_pic_size.png" />
+    <None Include="Resources\earth_pic.png" />
+    <None Include="Resources\Account icon2.ico" />
+    <None Include="Resources\Minimize_butt.png" />
+    <None Include="Resources\calc.png" />
+    <None Include="Resources\play_game.png" />
+    <None Include="Resources\290120_account_avatar_man_profile_user_icon.png" />
+    <None Include="Resources\Account icon1.ico" />
+    <None Include="Resources\Account icon.ico" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\polen.jpg" />
+    <None Include="Resources\china_flag.png" />
+    <None Include="Resources\swissflag.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
