@@ -63,9 +63,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _290120_account_avatar_man_profile_user_icon {
+        internal static System.Drawing.Bitmap air_image {
             get {
-                object obj = ResourceManager.GetObject("290120_account_avatar_man_profile_user_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("air_image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap brasilien {
+        internal static System.Drawing.Bitmap desert {
             get {
-                object obj = ResourceManager.GetObject("brasilien", resourceCulture);
+                object obj = ResourceManager.GetObject("desert", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,69 +83,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap car_logo {
+        internal static System.Drawing.Bitmap earth_image {
             get {
-                object obj = ResourceManager.GetObject("car_logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap china_flag {
-            get {
-                object obj = ResourceManager.GetObject("china_flag", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap close_button {
-            get {
-                object obj = ResourceManager.GetObject("close_button", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap computer {
-            get {
-                object obj = ResourceManager.GetObject("computer", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap deutschland {
-            get {
-                object obj = ResourceManager.GetObject("deutschland", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap earth_logo {
-            get {
-                object obj = ResourceManager.GetObject("earth_logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap elefant_button_logo {
-            get {
-                object obj = ResourceManager.GetObject("elefant_button_logo", resourceCulture);
+                object obj = ResourceManager.GetObject("earth_image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +103,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Frankreich {
+        internal static System.Drawing.Bitmap forest {
             get {
-                object obj = ResourceManager.GetObject("Frankreich", resourceCulture);
+                object obj = ResourceManager.GetObject("forest", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +113,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fussball {
+        internal static System.Drawing.Bitmap minimize_button {
             get {
-                object obj = ResourceManager.GetObject("fussball", resourceCulture);
+                object obj = ResourceManager.GetObject("minimize_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +123,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Italien {
+        internal static System.Drawing.Bitmap number1__2_ {
             get {
-                object obj = ResourceManager.GetObject("Italien", resourceCulture);
+                object obj = ResourceManager.GetObject("number1 (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +133,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap log_out {
+        internal static System.Drawing.Bitmap number2 {
             get {
-                object obj = ResourceManager.GetObject("log_out", resourceCulture);
+                object obj = ResourceManager.GetObject("number2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +143,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Minimize_butt {
+        internal static System.Drawing.Bitmap number3 {
             get {
-                object obj = ResourceManager.GetObject("Minimize_butt", resourceCulture);
+                object obj = ResourceManager.GetObject("number3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +153,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap password_user_lock_image {
+        internal static System.Drawing.Bitmap number4 {
             get {
-                object obj = ResourceManager.GetObject("password_user_lock_image", resourceCulture);
+                object obj = ResourceManager.GetObject("number4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +163,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap plants {
+        internal static System.Drawing.Bitmap rainforest {
             get {
-                object obj = ResourceManager.GetObject("plants", resourceCulture);
+                object obj = ResourceManager.GetObject("rainforest", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,9 +173,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap play_game {
+        internal static System.Drawing.Bitmap savanne {
             get {
-                object obj = ResourceManager.GetObject("play_game", resourceCulture);
+                object obj = ResourceManager.GetObject("savanne", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +183,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap random_image {
+        internal static System.Drawing.Bitmap snow {
             get {
-                object obj = ResourceManager.GetObject("random_image", resourceCulture);
+                object obj = ResourceManager.GetObject("snow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,39 +193,9 @@ namespace Best_Quiz_App.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap space_ship {
+        internal static System.Drawing.Bitmap water_image {
             get {
-                object obj = ResourceManager.GetObject("space_ship", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Spanien {
-            get {
-                object obj = ResourceManager.GetObject("Spanien", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap swissflag {
-            get {
-                object obj = ResourceManager.GetObject("swissflag", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap user_profile_image {
-            get {
-                object obj = ResourceManager.GetObject("user_profile_image", resourceCulture);
+                object obj = ResourceManager.GetObject("water_image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -29,490 +29,681 @@ namespace Best_Quiz_App.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.questionlabel1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.question_index_label1 = new System.Windows.Forms.Label();
-            this.quiz_category_panel3 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.random_button7 = new System.Windows.Forms.Button();
-            this.space_label6 = new System.Windows.Forms.Label();
-            this.space_button6 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.sport_button5 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.plants_button5 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.animal_button_label1 = new System.Windows.Forms.Label();
-            this.car_button5 = new System.Windows.Forms.Button();
-            this.animal_button6 = new System.Windows.Forms.Button();
-            this.capital_city_button7 = new System.Windows.Forms.Button();
-            this.quiz_label3 = new System.Windows.Forms.Label();
-            this.ict_button8 = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Label text1Label;
+            System.Windows.Forms.Label text2Label;
+            System.Windows.Forms.Label text4Label;
+            System.Windows.Forms.Label text3Label;
+            System.Windows.Forms.Button minimize_button1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainQuizForm));
+            this.quiz_value_tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quiz_DS = new Best_Quiz_App.DS.Quiz_DS();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.quiz_value_tableTableAdapter = new Best_Quiz_App.DS.Quiz_DSTableAdapters.quiz_value_tableTableAdapter();
+            this.tableAdapterManager = new Best_Quiz_App.DS.Quiz_DSTableAdapters.TableAdapterManager();
+            this.QuizPage = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.goBack_button2 = new System.Windows.Forms.Button();
+            this.text3Label1 = new System.Windows.Forms.Label();
+            this.text4Label1 = new System.Windows.Forms.Label();
+            this.text2Label1 = new System.Windows.Forms.Label();
+            this.text1Label1 = new System.Windows.Forms.Label();
+            this.quiz_index_label1 = new System.Windows.Forms.Label();
+            this.correctAnswearLabel1 = new System.Windows.Forms.Label();
+            this.quiz_button3 = new System.Windows.Forms.Button();
+            this.quiz_button1 = new System.Windows.Forms.Button();
+            this.quiz_button4 = new System.Windows.Forms.Button();
+            this.quiz_button2 = new System.Windows.Forms.Button();
             this.test_image_pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.quiz_category_panel3.SuspendLayout();
+            this.homeScreen_page1 = new System.Windows.Forms.TabPage();
+            this.header_label1 = new System.Windows.Forms.Label();
+            this.forest_button3 = new System.Windows.Forms.Button();
+            this.snow_button3 = new System.Windows.Forms.Button();
+            this.savanne_button4 = new System.Windows.Forms.Button();
+            this.desert_button1 = new System.Windows.Forms.Button();
+            this.exit_button2 = new System.Windows.Forms.Button();
+            this.rainforest_category_button2 = new System.Windows.Forms.Button();
+            this.Air_category_button3 = new System.Windows.Forms.Button();
+            this.water_category_button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.animal_button6 = new System.Windows.Forms.Button();
+            this.score_tabControl = new System.Windows.Forms.TabControl();
+            text1Label = new System.Windows.Forms.Label();
+            text2Label = new System.Windows.Forms.Label();
+            text4Label = new System.Windows.Forms.Label();
+            text3Label = new System.Windows.Forms.Label();
+            minimize_button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.quiz_value_tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quiz_DS)).BeginInit();
+            this.QuizPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.test_image_pictureBox1)).BeginInit();
+            this.homeScreen_page1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.score_tabControl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // questionlabel1
+            // text1Label
             // 
-            this.questionlabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.questionlabel1.BackColor = System.Drawing.Color.White;
-            this.questionlabel1.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.questionlabel1.ForeColor = System.Drawing.Color.Black;
-            this.questionlabel1.Location = new System.Drawing.Point(216, 319);
-            this.questionlabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.questionlabel1.Name = "questionlabel1";
-            this.questionlabel1.Size = new System.Drawing.Size(1010, 63);
-            this.questionlabel1.TabIndex = 23;
-            this.questionlabel1.Text = "label1";
-            this.questionlabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            text1Label.AutoSize = true;
+            text1Label.BackColor = System.Drawing.Color.Black;
+            text1Label.ForeColor = System.Drawing.Color.White;
+            text1Label.Location = new System.Drawing.Point(128, 229);
+            text1Label.Name = "text1Label";
+            text1Label.Size = new System.Drawing.Size(33, 13);
+            text1Label.TabIndex = 56;
+            text1Label.Text = "text1:";
             // 
-            // button4
+            // text2Label
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.LightGray;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.BorderSize = 10;
-            this.button4.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button4.Location = new System.Drawing.Point(367, 561);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(722, 65);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "Text1";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button1_Click);
+            text2Label.AutoSize = true;
+            text2Label.BackColor = System.Drawing.Color.Black;
+            text2Label.ForeColor = System.Drawing.Color.White;
+            text2Label.Location = new System.Drawing.Point(128, 264);
+            text2Label.Name = "text2Label";
+            text2Label.Size = new System.Drawing.Size(33, 13);
+            text2Label.TabIndex = 57;
+            text2Label.Text = "text2:";
             // 
-            // button3
+            // text4Label
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.BackColor = System.Drawing.Color.LightGray;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.BorderSize = 10;
-            this.button3.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(367, 395);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(722, 65);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Text1";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button1_Click);
+            text4Label.AutoSize = true;
+            text4Label.BackColor = System.Drawing.Color.Black;
+            text4Label.ForeColor = System.Drawing.Color.White;
+            text4Label.Location = new System.Drawing.Point(128, 353);
+            text4Label.Name = "text4Label";
+            text4Label.Size = new System.Drawing.Size(33, 13);
+            text4Label.TabIndex = 58;
+            text4Label.Text = "text4:";
             // 
-            // button2
+            // text3Label
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.LightGray;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.BorderSize = 10;
-            this.button2.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Location = new System.Drawing.Point(367, 643);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(722, 65);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Text1";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button1_Click);
+            text3Label.AutoSize = true;
+            text3Label.BackColor = System.Drawing.Color.Black;
+            text3Label.ForeColor = System.Drawing.Color.White;
+            text3Label.Location = new System.Drawing.Point(128, 313);
+            text3Label.Name = "text3Label";
+            text3Label.Size = new System.Drawing.Size(33, 13);
+            text3Label.TabIndex = 59;
+            text3Label.Text = "text3:";
             // 
-            // button1
+            // minimize_button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.LightGray;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 10;
-            this.button1.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(367, 479);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(722, 65);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Text1";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            minimize_button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            minimize_button1.BackColor = System.Drawing.Color.Black;
+            minimize_button1.BackgroundImage = global::Best_Quiz_App.Properties.Resources.minimize_button;
+            minimize_button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            minimize_button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            minimize_button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            minimize_button1.ForeColor = System.Drawing.Color.White;
+            minimize_button1.Location = new System.Drawing.Point(1708, 18);
+            minimize_button1.Margin = new System.Windows.Forms.Padding(2);
+            minimize_button1.Name = "minimize_button1";
+            minimize_button1.Size = new System.Drawing.Size(87, 75);
+            minimize_button1.TabIndex = 78;
+            minimize_button1.UseVisualStyleBackColor = false;
+            minimize_button1.Click += new System.EventHandler(this.minimize_button1_Click);
             // 
-            // question_index_label1
+            // quiz_value_tableBindingSource
             // 
-            this.question_index_label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.question_index_label1.AutoSize = true;
-            this.question_index_label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question_index_label1.Location = new System.Drawing.Point(700, 14);
-            this.question_index_label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.question_index_label1.Name = "question_index_label1";
-            this.question_index_label1.Size = new System.Drawing.Size(42, 26);
-            this.question_index_label1.TabIndex = 24;
-            this.question_index_label1.Text = "1/5";
-            this.question_index_label1.Click += new System.EventHandler(this.question_index_label1_Click);
+            this.quiz_value_tableBindingSource.DataMember = "quiz_value_table";
+            this.quiz_value_tableBindingSource.DataSource = this.quiz_DS;
             // 
-            // quiz_category_panel3
+            // quiz_DS
             // 
-            this.quiz_category_panel3.BackColor = System.Drawing.Color.Transparent;
-            this.quiz_category_panel3.Controls.Add(this.label7);
-            this.quiz_category_panel3.Controls.Add(this.random_button7);
-            this.quiz_category_panel3.Controls.Add(this.space_label6);
-            this.quiz_category_panel3.Controls.Add(this.space_button6);
-            this.quiz_category_panel3.Controls.Add(this.label5);
-            this.quiz_category_panel3.Controls.Add(this.sport_button5);
-            this.quiz_category_panel3.Controls.Add(this.label4);
-            this.quiz_category_panel3.Controls.Add(this.plants_button5);
-            this.quiz_category_panel3.Controls.Add(this.label3);
-            this.quiz_category_panel3.Controls.Add(this.label2);
-            this.quiz_category_panel3.Controls.Add(this.label1);
-            this.quiz_category_panel3.Controls.Add(this.animal_button_label1);
-            this.quiz_category_panel3.Controls.Add(this.car_button5);
-            this.quiz_category_panel3.Controls.Add(this.animal_button6);
-            this.quiz_category_panel3.Controls.Add(this.capital_city_button7);
-            this.quiz_category_panel3.Controls.Add(this.quiz_label3);
-            this.quiz_category_panel3.Controls.Add(this.ict_button8);
-            this.quiz_category_panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.quiz_category_panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.quiz_category_panel3.Location = new System.Drawing.Point(0, 0);
-            this.quiz_category_panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.quiz_category_panel3.Name = "quiz_category_panel3";
-            this.quiz_category_panel3.Size = new System.Drawing.Size(1431, 775);
-            this.quiz_category_panel3.TabIndex = 25;
-            this.quiz_category_panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.quiz_category_panel3_Paint);
+            this.quiz_DS.DataSetName = "Quiz_DS";
+            this.quiz_DS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label7
+            // imageList1
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Silver;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(1058, 605);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(101, 26);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Random";
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // random_button7
+            // openFileDialog1
             // 
-            this.random_button7.BackColor = System.Drawing.Color.Silver;
-            this.random_button7.BackgroundImage = global::Best_Quiz_App.Properties.Resources.random_image;
-            this.random_button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.random_button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.random_button7.Font = new System.Drawing.Font("Corbel", 8.25F);
-            this.random_button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.random_button7.Location = new System.Drawing.Point(996, 428);
-            this.random_button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.random_button7.Name = "random_button7";
-            this.random_button7.Size = new System.Drawing.Size(218, 226);
-            this.random_button7.TabIndex = 38;
-            this.random_button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.random_button7.UseVisualStyleBackColor = false;
-            this.random_button7.Click += new System.EventHandler(this.random_button7_Click);
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // space_label6
+            // quiz_value_tableTableAdapter
             // 
-            this.space_label6.AutoSize = true;
-            this.space_label6.BackColor = System.Drawing.Color.Silver;
-            this.space_label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.space_label6.ForeColor = System.Drawing.Color.Black;
-            this.space_label6.Location = new System.Drawing.Point(1064, 341);
-            this.space_label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.space_label6.Name = "space_label6";
-            this.space_label6.Size = new System.Drawing.Size(79, 26);
-            this.space_label6.TabIndex = 37;
-            this.space_label6.Text = "Space";
+            this.quiz_value_tableTableAdapter.ClearBeforeFill = true;
             // 
-            // space_button6
+            // tableAdapterManager
             // 
-            this.space_button6.BackColor = System.Drawing.Color.Silver;
-            this.space_button6.BackgroundImage = global::Best_Quiz_App.Properties.Resources.space_ship;
-            this.space_button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.space_button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.space_button6.Font = new System.Drawing.Font("Corbel", 8.25F);
-            this.space_button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.space_button6.Location = new System.Drawing.Point(998, 164);
-            this.space_button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.space_button6.Name = "space_button6";
-            this.space_button6.Size = new System.Drawing.Size(218, 226);
-            this.space_button6.TabIndex = 36;
-            this.space_button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.space_button6.UseVisualStyleBackColor = false;
-            this.space_button6.Click += new System.EventHandler(this.space_button6_Click);
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.quiz_value_tableTableAdapter = this.quiz_value_tableTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Best_Quiz_App.DS.Quiz_DSTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // label5
+            // QuizPage
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Silver;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(262, 608);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 26);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "Football";
+            this.QuizPage.BackColor = System.Drawing.Color.Black;
+            this.QuizPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.QuizPage.Controls.Add(this.panel1);
+            this.QuizPage.Controls.Add(this.goBack_button2);
+            this.QuizPage.Controls.Add(text3Label);
+            this.QuizPage.Controls.Add(this.text3Label1);
+            this.QuizPage.Controls.Add(text4Label);
+            this.QuizPage.Controls.Add(this.text4Label1);
+            this.QuizPage.Controls.Add(text2Label);
+            this.QuizPage.Controls.Add(this.text2Label1);
+            this.QuizPage.Controls.Add(text1Label);
+            this.QuizPage.Controls.Add(this.text1Label1);
+            this.QuizPage.Controls.Add(this.quiz_index_label1);
+            this.QuizPage.Controls.Add(this.quiz_button3);
+            this.QuizPage.Controls.Add(this.quiz_button1);
+            this.QuizPage.Controls.Add(this.quiz_button4);
+            this.QuizPage.Controls.Add(this.quiz_button2);
+            this.QuizPage.Controls.Add(this.test_image_pictureBox1);
+            this.QuizPage.Controls.Add(this.correctAnswearLabel1);
+            this.QuizPage.ForeColor = System.Drawing.Color.Transparent;
+            this.QuizPage.Location = new System.Drawing.Point(4, 4);
+            this.QuizPage.Name = "QuizPage";
+            this.QuizPage.Padding = new System.Windows.Forms.Padding(3);
+            this.QuizPage.Size = new System.Drawing.Size(1912, 1077);
+            this.QuizPage.TabIndex = 2;
+            this.QuizPage.Text = "QuizPage";
+            this.QuizPage.Click += new System.EventHandler(this.QuizPage_Click);
             // 
-            // sport_button5
+            // panel1
             // 
-            this.sport_button5.BackColor = System.Drawing.Color.Silver;
-            this.sport_button5.BackgroundImage = global::Best_Quiz_App.Properties.Resources.fussball;
-            this.sport_button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.sport_button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sport_button5.Font = new System.Drawing.Font("Corbel", 8.25F);
-            this.sport_button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.sport_button5.Location = new System.Drawing.Point(202, 428);
-            this.sport_button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.sport_button5.Name = "sport_button5";
-            this.sport_button5.Size = new System.Drawing.Size(218, 226);
-            this.sport_button5.TabIndex = 34;
-            this.sport_button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.sport_button5.UseVisualStyleBackColor = false;
-            this.sport_button5.Click += new System.EventHandler(this.sport_button5_Click);
+            this.panel1.Location = new System.Drawing.Point(66, 197);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(201, 231);
+            this.panel1.TabIndex = 62;
             // 
-            // label4
+            // goBack_button2
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Silver;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(270, 341);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 26);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "Plants";
-            this.label4.Click += new System.EventHandler(this.plants_button5_Click);
+            this.goBack_button2.BackColor = System.Drawing.Color.Black;
+            this.goBack_button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.goBack_button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.goBack_button2.Location = new System.Drawing.Point(66, 29);
+            this.goBack_button2.Name = "goBack_button2";
+            this.goBack_button2.Size = new System.Drawing.Size(160, 71);
+            this.goBack_button2.TabIndex = 61;
+            this.goBack_button2.Text = "BackToHome";
+            this.goBack_button2.UseVisualStyleBackColor = false;
+            this.goBack_button2.Click += new System.EventHandler(this.goBack_button2_Click);
             // 
-            // plants_button5
+            // text3Label1
             // 
-            this.plants_button5.BackColor = System.Drawing.Color.Silver;
-            this.plants_button5.BackgroundImage = global::Best_Quiz_App.Properties.Resources.plants;
-            this.plants_button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.plants_button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.plants_button5.Font = new System.Drawing.Font("Corbel", 8.25F);
-            this.plants_button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.plants_button5.Location = new System.Drawing.Point(202, 164);
-            this.plants_button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.plants_button5.Name = "plants_button5";
-            this.plants_button5.Size = new System.Drawing.Size(218, 226);
-            this.plants_button5.TabIndex = 29;
-            this.plants_button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.plants_button5.UseVisualStyleBackColor = false;
-            this.plants_button5.Click += new System.EventHandler(this.plants_button5_Click);
+            this.text3Label1.BackColor = System.Drawing.Color.Black;
+            this.text3Label1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiz_value_tableBindingSource, "text3", true));
+            this.text3Label1.ForeColor = System.Drawing.Color.White;
+            this.text3Label1.Location = new System.Drawing.Point(167, 313);
+            this.text3Label1.Name = "text3Label1";
+            this.text3Label1.Size = new System.Drawing.Size(100, 23);
+            this.text3Label1.TabIndex = 60;
+            this.text3Label1.Text = "label1";
             // 
-            // label3
+            // text4Label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Silver;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(811, 341);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 26);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Geo";
-            this.label3.Click += new System.EventHandler(this.capital_city_button7_Click);
+            this.text4Label1.BackColor = System.Drawing.Color.Black;
+            this.text4Label1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiz_value_tableBindingSource, "text4", true));
+            this.text4Label1.ForeColor = System.Drawing.Color.White;
+            this.text4Label1.Location = new System.Drawing.Point(167, 353);
+            this.text4Label1.Name = "text4Label1";
+            this.text4Label1.Size = new System.Drawing.Size(100, 23);
+            this.text4Label1.TabIndex = 59;
+            this.text4Label1.Text = "label1";
             // 
-            // label2
+            // text2Label1
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Silver;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(527, 334);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 26);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Vehicles";
-            this.label2.Click += new System.EventHandler(this.car_button5_Click);
+            this.text2Label1.BackColor = System.Drawing.Color.Black;
+            this.text2Label1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiz_value_tableBindingSource, "text2", true));
+            this.text2Label1.ForeColor = System.Drawing.Color.White;
+            this.text2Label1.Location = new System.Drawing.Point(167, 264);
+            this.text2Label1.Name = "text2Label1";
+            this.text2Label1.Size = new System.Drawing.Size(100, 23);
+            this.text2Label1.TabIndex = 58;
+            this.text2Label1.Text = "label1";
             // 
-            // label1
+            // text1Label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Silver;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(491, 608);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 26);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Computer World";
-            this.label1.Click += new System.EventHandler(this.ict_button8_Click);
+            this.text1Label1.BackColor = System.Drawing.Color.Black;
+            this.text1Label1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiz_value_tableBindingSource, "text1", true));
+            this.text1Label1.ForeColor = System.Drawing.Color.White;
+            this.text1Label1.Location = new System.Drawing.Point(167, 229);
+            this.text1Label1.Name = "text1Label1";
+            this.text1Label1.Size = new System.Drawing.Size(100, 23);
+            this.text1Label1.TabIndex = 57;
+            this.text1Label1.Text = "label1";
             // 
-            // animal_button_label1
+            // quiz_index_label1
             // 
-            this.animal_button_label1.AutoSize = true;
-            this.animal_button_label1.BackColor = System.Drawing.Color.Silver;
-            this.animal_button_label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.animal_button_label1.ForeColor = System.Drawing.Color.Black;
-            this.animal_button_label1.Location = new System.Drawing.Point(792, 608);
-            this.animal_button_label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.animal_button_label1.Name = "animal_button_label1";
-            this.animal_button_label1.Size = new System.Drawing.Size(98, 26);
-            this.animal_button_label1.TabIndex = 25;
-            this.animal_button_label1.Text = "Animals";
-            this.animal_button_label1.Click += new System.EventHandler(this.animal_button6_Click);
+            this.quiz_index_label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.quiz_index_label1.AutoSize = true;
+            this.quiz_index_label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quiz_index_label1.ForeColor = System.Drawing.Color.White;
+            this.quiz_index_label1.Location = new System.Drawing.Point(891, 57);
+            this.quiz_index_label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.quiz_index_label1.Name = "quiz_index_label1";
+            this.quiz_index_label1.Size = new System.Drawing.Size(118, 54);
+            this.quiz_index_label1.TabIndex = 55;
+            this.quiz_index_label1.Text = "1/11";
             // 
-            // car_button5
+            // correctAnswearLabel1
             // 
-            this.car_button5.BackColor = System.Drawing.Color.Silver;
-            this.car_button5.BackgroundImage = global::Best_Quiz_App.Properties.Resources.car_logo;
-            this.car_button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.car_button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.car_button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.car_button5.Location = new System.Drawing.Point(468, 164);
-            this.car_button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.car_button5.Name = "car_button5";
-            this.car_button5.Size = new System.Drawing.Size(218, 226);
-            this.car_button5.TabIndex = 23;
-            this.car_button5.Tag = "Cars";
-            this.car_button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.car_button5.UseVisualStyleBackColor = false;
-            this.car_button5.Click += new System.EventHandler(this.car_button5_Click);
+            this.correctAnswearLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiz_value_tableBindingSource, "correctAnswear", true));
+            this.correctAnswearLabel1.Location = new System.Drawing.Point(1439, 547);
+            this.correctAnswearLabel1.Name = "correctAnswearLabel1";
+            this.correctAnswearLabel1.Size = new System.Drawing.Size(100, 23);
+            this.correctAnswearLabel1.TabIndex = 56;
+            this.correctAnswearLabel1.Text = "label1";
             // 
-            // animal_button6
+            // quiz_button3
             // 
-            this.animal_button6.BackColor = System.Drawing.Color.Silver;
-            this.animal_button6.BackgroundImage = global::Best_Quiz_App.Properties.Resources.elefant_button_logo;
-            this.animal_button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.animal_button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.animal_button6.Font = new System.Drawing.Font("Corbel", 8.25F);
-            this.animal_button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.animal_button6.Location = new System.Drawing.Point(730, 428);
-            this.animal_button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.animal_button6.Name = "animal_button6";
-            this.animal_button6.Size = new System.Drawing.Size(218, 226);
-            this.animal_button6.TabIndex = 22;
-            this.animal_button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.animal_button6.UseVisualStyleBackColor = false;
-            this.animal_button6.Click += new System.EventHandler(this.animal_button6_Click);
+            this.quiz_button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.quiz_button3.BackColor = System.Drawing.Color.Gray;
+            this.quiz_button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quiz_button3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiz_value_tableBindingSource, "text3", true));
+            this.quiz_button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.quiz_button3.FlatAppearance.BorderSize = 10;
+            this.quiz_button3.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quiz_button3.ForeColor = System.Drawing.Color.White;
+            this.quiz_button3.Image = global::Best_Quiz_App.Properties.Resources.number3;
+            this.quiz_button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.quiz_button3.Location = new System.Drawing.Point(348, 748);
+            this.quiz_button3.Margin = new System.Windows.Forms.Padding(2);
+            this.quiz_button3.Name = "quiz_button3";
+            this.quiz_button3.Size = new System.Drawing.Size(1211, 81);
+            this.quiz_button3.TabIndex = 53;
+            this.quiz_button3.Text = "Text1";
+            this.quiz_button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.quiz_button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.quiz_button3.UseVisualStyleBackColor = false;
+            this.quiz_button3.Click += new System.EventHandler(this.question_button_click);
             // 
-            // capital_city_button7
+            // quiz_button1
             // 
-            this.capital_city_button7.BackColor = System.Drawing.Color.Silver;
-            this.capital_city_button7.BackgroundImage = global::Best_Quiz_App.Properties.Resources.earth_logo;
-            this.capital_city_button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.capital_city_button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.capital_city_button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.capital_city_button7.Location = new System.Drawing.Point(730, 164);
-            this.capital_city_button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.capital_city_button7.Name = "capital_city_button7";
-            this.capital_city_button7.Size = new System.Drawing.Size(218, 226);
-            this.capital_city_button7.TabIndex = 21;
-            this.capital_city_button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.capital_city_button7.UseVisualStyleBackColor = false;
-            this.capital_city_button7.Click += new System.EventHandler(this.capital_city_button7_Click);
+            this.quiz_button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.quiz_button1.BackColor = System.Drawing.Color.Gray;
+            this.quiz_button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.quiz_button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quiz_button1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiz_value_tableBindingSource, "text1", true));
+            this.quiz_button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.quiz_button1.FlatAppearance.BorderSize = 10;
+            this.quiz_button1.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quiz_button1.ForeColor = System.Drawing.Color.White;
+            this.quiz_button1.Image = ((System.Drawing.Image)(resources.GetObject("quiz_button1.Image")));
+            this.quiz_button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.quiz_button1.Location = new System.Drawing.Point(348, 530);
+            this.quiz_button1.Margin = new System.Windows.Forms.Padding(2);
+            this.quiz_button1.Name = "quiz_button1";
+            this.quiz_button1.Size = new System.Drawing.Size(1211, 81);
+            this.quiz_button1.TabIndex = 52;
+            this.quiz_button1.Text = "Text1";
+            this.quiz_button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.quiz_button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.quiz_button1.UseVisualStyleBackColor = false;
+            this.quiz_button1.Click += new System.EventHandler(this.question_button_click);
             // 
-            // quiz_label3
+            // quiz_button4
             // 
-            this.quiz_label3.AutoSize = true;
-            this.quiz_label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.quiz_label3.Font = new System.Drawing.Font("MV Boli", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quiz_label3.ForeColor = System.Drawing.Color.Black;
-            this.quiz_label3.Location = new System.Drawing.Point(424, 29);
-            this.quiz_label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.quiz_label3.Name = "quiz_label3";
-            this.quiz_label3.Size = new System.Drawing.Size(588, 85);
-            this.quiz_label3.TabIndex = 24;
-            this.quiz_label3.Text = "Choose a category";
+            this.quiz_button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.quiz_button4.BackColor = System.Drawing.Color.Gray;
+            this.quiz_button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quiz_button4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiz_value_tableBindingSource, "text4", true));
+            this.quiz_button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.quiz_button4.FlatAppearance.BorderSize = 10;
+            this.quiz_button4.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quiz_button4.ForeColor = System.Drawing.Color.White;
+            this.quiz_button4.Image = global::Best_Quiz_App.Properties.Resources.number4;
+            this.quiz_button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.quiz_button4.Location = new System.Drawing.Point(348, 859);
+            this.quiz_button4.Margin = new System.Windows.Forms.Padding(2);
+            this.quiz_button4.Name = "quiz_button4";
+            this.quiz_button4.Size = new System.Drawing.Size(1211, 81);
+            this.quiz_button4.TabIndex = 51;
+            this.quiz_button4.Text = "Text1";
+            this.quiz_button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.quiz_button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.quiz_button4.UseVisualStyleBackColor = false;
+            this.quiz_button4.Click += new System.EventHandler(this.question_button_click);
             // 
-            // ict_button8
+            // quiz_button2
             // 
-            this.ict_button8.BackColor = System.Drawing.Color.Silver;
-            this.ict_button8.BackgroundImage = global::Best_Quiz_App.Properties.Resources.computer;
-            this.ict_button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ict_button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ict_button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ict_button8.Location = new System.Drawing.Point(468, 428);
-            this.ict_button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ict_button8.Name = "ict_button8";
-            this.ict_button8.Size = new System.Drawing.Size(218, 226);
-            this.ict_button8.TabIndex = 20;
-            this.ict_button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ict_button8.UseVisualStyleBackColor = false;
-            this.ict_button8.Click += new System.EventHandler(this.ict_button8_Click);
+            this.quiz_button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.quiz_button2.BackColor = System.Drawing.Color.Gray;
+            this.quiz_button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quiz_button2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.quiz_value_tableBindingSource, "text2", true));
+            this.quiz_button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.quiz_button2.FlatAppearance.BorderSize = 10;
+            this.quiz_button2.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quiz_button2.ForeColor = System.Drawing.Color.White;
+            this.quiz_button2.Image = global::Best_Quiz_App.Properties.Resources.number2;
+            this.quiz_button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.quiz_button2.Location = new System.Drawing.Point(348, 641);
+            this.quiz_button2.Margin = new System.Windows.Forms.Padding(2);
+            this.quiz_button2.Name = "quiz_button2";
+            this.quiz_button2.Size = new System.Drawing.Size(1211, 81);
+            this.quiz_button2.TabIndex = 50;
+            this.quiz_button2.Text = "Text1";
+            this.quiz_button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.quiz_button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.quiz_button2.UseVisualStyleBackColor = false;
+            this.quiz_button2.Click += new System.EventHandler(this.question_button_click);
             // 
             // test_image_pictureBox1
             // 
             this.test_image_pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.test_image_pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.test_image_pictureBox1.Location = new System.Drawing.Point(404, 96);
-            this.test_image_pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.test_image_pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.quiz_value_tableBindingSource, "image", true));
+            this.test_image_pictureBox1.Location = new System.Drawing.Point(693, 147);
+            this.test_image_pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.test_image_pictureBox1.Name = "test_image_pictureBox1";
-            this.test_image_pictureBox1.Size = new System.Drawing.Size(638, 212);
+            this.test_image_pictureBox1.Size = new System.Drawing.Size(532, 309);
             this.test_image_pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.test_image_pictureBox1.TabIndex = 18;
+            this.test_image_pictureBox1.TabIndex = 49;
             this.test_image_pictureBox1.TabStop = false;
-            this.test_image_pictureBox1.Click += new System.EventHandler(this.test_image_pictureBox1_Click);
+            // 
+            // homeScreen_page1
+            // 
+            this.homeScreen_page1.BackColor = System.Drawing.Color.Black;
+            this.homeScreen_page1.Controls.Add(minimize_button1);
+            this.homeScreen_page1.Controls.Add(this.header_label1);
+            this.homeScreen_page1.Controls.Add(this.forest_button3);
+            this.homeScreen_page1.Controls.Add(this.snow_button3);
+            this.homeScreen_page1.Controls.Add(this.savanne_button4);
+            this.homeScreen_page1.Controls.Add(this.desert_button1);
+            this.homeScreen_page1.Controls.Add(this.exit_button2);
+            this.homeScreen_page1.Controls.Add(this.rainforest_category_button2);
+            this.homeScreen_page1.Controls.Add(this.Air_category_button3);
+            this.homeScreen_page1.Controls.Add(this.water_category_button2);
+            this.homeScreen_page1.Controls.Add(this.textBox1);
+            this.homeScreen_page1.Controls.Add(this.button1);
+            this.homeScreen_page1.Controls.Add(this.pictureBox1);
+            this.homeScreen_page1.Controls.Add(this.animal_button6);
+            this.homeScreen_page1.ForeColor = System.Drawing.Color.White;
+            this.homeScreen_page1.Location = new System.Drawing.Point(4, 4);
+            this.homeScreen_page1.Name = "homeScreen_page1";
+            this.homeScreen_page1.Padding = new System.Windows.Forms.Padding(3);
+            this.homeScreen_page1.Size = new System.Drawing.Size(1912, 1077);
+            this.homeScreen_page1.TabIndex = 1;
+            this.homeScreen_page1.Text = "HomeScreen";
+            this.homeScreen_page1.Click += new System.EventHandler(this.homeScreen_page1_Click);
+            // 
+            // header_label1
+            // 
+            this.header_label1.AutoSize = true;
+            this.header_label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 99.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.header_label1.ForeColor = System.Drawing.Color.White;
+            this.header_label1.Location = new System.Drawing.Point(567, 56);
+            this.header_label1.Name = "header_label1";
+            this.header_label1.Size = new System.Drawing.Size(792, 152);
+            this.header_label1.TabIndex = 77;
+            this.header_label1.Text = "Animal Quiz";
+            // 
+            // forest_button3
+            // 
+            this.forest_button3.BackColor = System.Drawing.Color.Silver;
+            this.forest_button3.BackgroundImage = global::Best_Quiz_App.Properties.Resources.forest;
+            this.forest_button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.forest_button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.forest_button3.Font = new System.Drawing.Font("Corbel", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forest_button3.ForeColor = System.Drawing.Color.White;
+            this.forest_button3.Location = new System.Drawing.Point(1431, 651);
+            this.forest_button3.Margin = new System.Windows.Forms.Padding(2);
+            this.forest_button3.Name = "forest_button3";
+            this.forest_button3.Size = new System.Drawing.Size(400, 300);
+            this.forest_button3.TabIndex = 76;
+            this.forest_button3.Text = "Forest";
+            this.forest_button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.forest_button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.forest_button3.UseVisualStyleBackColor = false;
+            this.forest_button3.Click += new System.EventHandler(this.forest_button3_Click);
+            // 
+            // snow_button3
+            // 
+            this.snow_button3.BackColor = System.Drawing.Color.Silver;
+            this.snow_button3.BackgroundImage = global::Best_Quiz_App.Properties.Resources.snow;
+            this.snow_button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.snow_button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.snow_button3.Font = new System.Drawing.Font("Corbel", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.snow_button3.ForeColor = System.Drawing.Color.Black;
+            this.snow_button3.Location = new System.Drawing.Point(1431, 263);
+            this.snow_button3.Margin = new System.Windows.Forms.Padding(2);
+            this.snow_button3.Name = "snow_button3";
+            this.snow_button3.Size = new System.Drawing.Size(400, 300);
+            this.snow_button3.TabIndex = 75;
+            this.snow_button3.Text = "Snow";
+            this.snow_button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.snow_button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.snow_button3.UseVisualStyleBackColor = false;
+            this.snow_button3.Click += new System.EventHandler(this.snow_button3_Click);
+            // 
+            // savanne_button4
+            // 
+            this.savanne_button4.BackColor = System.Drawing.Color.Silver;
+            this.savanne_button4.BackgroundImage = global::Best_Quiz_App.Properties.Resources.savanne;
+            this.savanne_button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.savanne_button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.savanne_button4.Font = new System.Drawing.Font("Corbel", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savanne_button4.ForeColor = System.Drawing.Color.White;
+            this.savanne_button4.Location = new System.Drawing.Point(982, 651);
+            this.savanne_button4.Margin = new System.Windows.Forms.Padding(2);
+            this.savanne_button4.Name = "savanne_button4";
+            this.savanne_button4.Size = new System.Drawing.Size(400, 300);
+            this.savanne_button4.TabIndex = 74;
+            this.savanne_button4.Text = "Savanne";
+            this.savanne_button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.savanne_button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.savanne_button4.UseVisualStyleBackColor = false;
+            this.savanne_button4.Click += new System.EventHandler(this.savanne_button4_Click);
+            // 
+            // desert_button1
+            // 
+            this.desert_button1.BackColor = System.Drawing.Color.Silver;
+            this.desert_button1.BackgroundImage = global::Best_Quiz_App.Properties.Resources.desert;
+            this.desert_button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.desert_button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.desert_button1.Font = new System.Drawing.Font("Corbel", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.desert_button1.ForeColor = System.Drawing.Color.White;
+            this.desert_button1.Location = new System.Drawing.Point(982, 263);
+            this.desert_button1.Margin = new System.Windows.Forms.Padding(2);
+            this.desert_button1.Name = "desert_button1";
+            this.desert_button1.Size = new System.Drawing.Size(400, 300);
+            this.desert_button1.TabIndex = 73;
+            this.desert_button1.Text = "Desert";
+            this.desert_button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.desert_button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.desert_button1.UseVisualStyleBackColor = false;
+            this.desert_button1.Click += new System.EventHandler(this.desert_button1_Click);
+            // 
+            // exit_button2
+            // 
+            this.exit_button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exit_button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.exit_button2.BackgroundImage = global::Best_Quiz_App.Properties.Resources.exit;
+            this.exit_button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.exit_button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exit_button2.Location = new System.Drawing.Point(1808, 18);
+            this.exit_button2.Margin = new System.Windows.Forms.Padding(2);
+            this.exit_button2.Name = "exit_button2";
+            this.exit_button2.Size = new System.Drawing.Size(87, 75);
+            this.exit_button2.TabIndex = 72;
+            this.exit_button2.UseVisualStyleBackColor = false;
+            this.exit_button2.Click += new System.EventHandler(this.exit_button2_Click);
+            // 
+            // rainforest_category_button2
+            // 
+            this.rainforest_category_button2.BackColor = System.Drawing.Color.Silver;
+            this.rainforest_category_button2.BackgroundImage = global::Best_Quiz_App.Properties.Resources.rainforest;
+            this.rainforest_category_button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rainforest_category_button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rainforest_category_button2.Font = new System.Drawing.Font("Corbel", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rainforest_category_button2.ForeColor = System.Drawing.Color.White;
+            this.rainforest_category_button2.Location = new System.Drawing.Point(524, 651);
+            this.rainforest_category_button2.Margin = new System.Windows.Forms.Padding(2);
+            this.rainforest_category_button2.Name = "rainforest_category_button2";
+            this.rainforest_category_button2.Size = new System.Drawing.Size(400, 300);
+            this.rainforest_category_button2.TabIndex = 71;
+            this.rainforest_category_button2.Text = "Rainforest";
+            this.rainforest_category_button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rainforest_category_button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.rainforest_category_button2.UseVisualStyleBackColor = false;
+            this.rainforest_category_button2.Click += new System.EventHandler(this.rainforest_category_button2_Click);
+            // 
+            // Air_category_button3
+            // 
+            this.Air_category_button3.BackColor = System.Drawing.Color.Silver;
+            this.Air_category_button3.BackgroundImage = global::Best_Quiz_App.Properties.Resources.air_image;
+            this.Air_category_button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Air_category_button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Air_category_button3.Font = new System.Drawing.Font("Corbel", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Air_category_button3.ForeColor = System.Drawing.Color.White;
+            this.Air_category_button3.Location = new System.Drawing.Point(65, 651);
+            this.Air_category_button3.Margin = new System.Windows.Forms.Padding(2);
+            this.Air_category_button3.Name = "Air_category_button3";
+            this.Air_category_button3.Size = new System.Drawing.Size(400, 300);
+            this.Air_category_button3.TabIndex = 70;
+            this.Air_category_button3.Text = "Air";
+            this.Air_category_button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Air_category_button3.UseVisualStyleBackColor = false;
+            this.Air_category_button3.Click += new System.EventHandler(this.Air_category_button3_Click);
+            // 
+            // water_category_button2
+            // 
+            this.water_category_button2.BackColor = System.Drawing.Color.Silver;
+            this.water_category_button2.BackgroundImage = global::Best_Quiz_App.Properties.Resources.water_image;
+            this.water_category_button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.water_category_button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.water_category_button2.Font = new System.Drawing.Font("Corbel", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.water_category_button2.ForeColor = System.Drawing.Color.Black;
+            this.water_category_button2.Location = new System.Drawing.Point(524, 263);
+            this.water_category_button2.Margin = new System.Windows.Forms.Padding(2);
+            this.water_category_button2.Name = "water_category_button2";
+            this.water_category_button2.Size = new System.Drawing.Size(400, 300);
+            this.water_category_button2.TabIndex = 69;
+            this.water_category_button2.Text = "Water";
+            this.water_category_button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.water_category_button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.water_category_button2.UseVisualStyleBackColor = false;
+            this.water_category_button2.Click += new System.EventHandler(this.water_category_button2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(1264, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(141, 20);
+            this.textBox1.TabIndex = 68;
+            this.textBox1.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1264, 38);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 35);
+            this.button1.TabIndex = 67;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.quiz_value_tableBindingSource, "image", true));
+            this.pictureBox1.Location = new System.Drawing.Point(1159, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(99, 67);
+            this.pictureBox1.TabIndex = 66;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
+            // animal_button6
+            // 
+            this.animal_button6.BackColor = System.Drawing.Color.Black;
+            this.animal_button6.BackgroundImage = global::Best_Quiz_App.Properties.Resources.earth_image;
+            this.animal_button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.animal_button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.animal_button6.Font = new System.Drawing.Font("Corbel", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.animal_button6.ForeColor = System.Drawing.Color.White;
+            this.animal_button6.Location = new System.Drawing.Point(65, 263);
+            this.animal_button6.Margin = new System.Windows.Forms.Padding(2);
+            this.animal_button6.Name = "animal_button6";
+            this.animal_button6.Size = new System.Drawing.Size(400, 300);
+            this.animal_button6.TabIndex = 59;
+            this.animal_button6.Text = "All Animals";
+            this.animal_button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.animal_button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.animal_button6.UseVisualStyleBackColor = false;
+            this.animal_button6.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // score_tabControl
+            // 
+            this.score_tabControl.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.score_tabControl.Controls.Add(this.homeScreen_page1);
+            this.score_tabControl.Controls.Add(this.QuizPage);
+            this.score_tabControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.score_tabControl.Location = new System.Drawing.Point(0, 0);
+            this.score_tabControl.Name = "score_tabControl";
+            this.score_tabControl.SelectedIndex = 0;
+            this.score_tabControl.Size = new System.Drawing.Size(1920, 1103);
+            this.score_tabControl.TabIndex = 57;
             // 
             // MainQuizForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1431, 775);
-            this.Controls.Add(this.quiz_category_panel3);
-            this.Controls.Add(this.question_index_label1);
-            this.Controls.Add(this.questionlabel1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.test_image_pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1920, 1100);
+            this.Controls.Add(this.score_tabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainQuizForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainQuizForm";
-            this.TopMost = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainQuizForm_Load);
-            this.quiz_category_panel3.ResumeLayout(false);
-            this.quiz_category_panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.quiz_value_tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quiz_DS)).EndInit();
+            this.QuizPage.ResumeLayout(false);
+            this.QuizPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.test_image_pictureBox1)).EndInit();
+            this.homeScreen_page1.ResumeLayout(false);
+            this.homeScreen_page1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.score_tabControl.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label questionlabel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private DS.Quiz_DS quiz_DS;
+        private System.Windows.Forms.BindingSource quiz_value_tableBindingSource;
+        private DS.Quiz_DSTableAdapters.quiz_value_tableTableAdapter quiz_value_tableTableAdapter;
+        private DS.Quiz_DSTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TabPage QuizPage;
+        private System.Windows.Forms.Button goBack_button2;
+        private System.Windows.Forms.Label text3Label1;
+        private System.Windows.Forms.Label text4Label1;
+        private System.Windows.Forms.Label text2Label1;
+        private System.Windows.Forms.Label text1Label1;
+        private System.Windows.Forms.Label quiz_index_label1;
+        public System.Windows.Forms.Button quiz_button3;
+        public System.Windows.Forms.Button quiz_button1;
+        public System.Windows.Forms.Button quiz_button4;
+        public System.Windows.Forms.Button quiz_button2;
+        private System.Windows.Forms.Label correctAnswearLabel1;
         private System.Windows.Forms.PictureBox test_image_pictureBox1;
-        private System.Windows.Forms.Label question_index_label1;
-        private System.Windows.Forms.Panel quiz_category_panel3;
-        public System.Windows.Forms.Button car_button5;
+        private System.Windows.Forms.TabPage homeScreen_page1;
+        private System.Windows.Forms.Label header_label1;
+        public System.Windows.Forms.Button forest_button3;
+        public System.Windows.Forms.Button snow_button3;
+        public System.Windows.Forms.Button savanne_button4;
+        public System.Windows.Forms.Button desert_button1;
+        private System.Windows.Forms.Button exit_button2;
+        public System.Windows.Forms.Button rainforest_category_button2;
+        public System.Windows.Forms.Button Air_category_button3;
+        public System.Windows.Forms.Button water_category_button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Button animal_button6;
-        public System.Windows.Forms.Button capital_city_button7;
-        public System.Windows.Forms.Label quiz_label3;
-        public System.Windows.Forms.Button ict_button8;
-        private System.Windows.Forms.Label animal_button_label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Button plants_button5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Button sport_button5;
-        private System.Windows.Forms.Label space_label6;
-        public System.Windows.Forms.Button space_button6;
-        private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.Button random_button7;
+        private System.Windows.Forms.TabControl score_tabControl;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
+using Best_Quiz_App.Class;
 
 namespace Best_Quiz_App.Forms
 {
@@ -18,23 +19,13 @@ namespace Best_Quiz_App.Forms
 
      
 
-        private void ScoreForm_Load(object sender, EventArgs e)
-        {
-           
-            for (int i = 0; i <= Best_Quiz_App.Properties.Settings.Default.score; i++)
-            {
-
-                this.score_label2.Text = $"{i}/5";
-            }
+        private void ScoreForm_Load(object sender, EventArgs e){
+            this.score_label2.Text = Settings.ScoreCount.ToString() +"/"+Settings.allowedCount.ToString();
         }
 
-        private void home_button1_Click(object sender, EventArgs e)
-        {
-
+        private void home_button1_Click(object sender, EventArgs e){
+            this.DialogResult = DialogResult.OK;
             this.Close();
-           
-            Best_Quiz_App.Properties.Settings.Default.checkMainMenu = 1;
-          
         }
 
         private void back_panel1_Paint(object sender, PaintEventArgs e)

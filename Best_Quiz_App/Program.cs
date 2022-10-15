@@ -14,7 +14,7 @@ namespace Best_Quiz_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Best_Quiz_App.Forms.MainForm());
+            Application.Run(new Best_Quiz_App.Forms.MainQuizForm());
         }
     }
 }

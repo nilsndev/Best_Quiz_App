@@ -117,4 +117,60 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="text1Label.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="text2Label.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="text4Label.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="text3Label.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="minimize_button1.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="quiz_value_tableBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>112, 17</value>
+  </metadata>
+  <metadata name="quiz_DS.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>716, 17</value>
+  </metadata>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>826, 17</value>
+  </metadata>
+  <metadata name="quiz_value_tableTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>331, 17</value>
+  </metadata>
+  <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>545, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="quiz_button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAyRJREFUeF7t20eLFEEYxvH1YjjoF1DBiB7MiAFvIhhQv4SKfhPBhGL6IIqyJlQM
+        GMGrYkJPxoMBs/4f3MNYPItW19s9PWs/8GOHpbq6Zmdnuqr6naEuXbp06dKl9szHLhzHeTzEG3zB55HH
+        D3AOR7EdczDQWYIDeI6fFT3BHizAQGQctuA63BMqcQnr0dqswC24wUe6gsVoTSbhML7DDbgOX7EX49HX
+        zMM9uEE24SZmoi9ZiVdwA2vSa6xGo9mIj3AD6od3WItGsgrv4QbSTx9Q+3+C3vNv4QbQBi8wA7VkIu7C
+        nbhN9MFYy9XhCNwJ20izx9Asxze4k7WR5glhkyVNb+uY4f2AFke6jssZuHZVXUZItsKdoIQWOevQm9lw
+        bUuk56iUyIWNXvVjmAwXd0yJiyjKUriOq3Cvehp3XKmipbTW867TXCcw2qveG3dsqd2onJLNjF5TkWbK
+        yM/euGNLPUKlaNbnOqxiGnqjt8LT3w//iDs2wixkR3t4rrMqTkJTVF3udOnTh6F+nyY9Lso2ZEcDdZ1F
+        SuPaRDiE7FyA6yxSGtcmwjCy8xius0hpXJsI2nLPjnZaXGeR0rg2EbRMzo5uWLjOIqVxbSJ8Qnb++z/A
+        WHoLvER2NINynUVK49pE0L3I7Iyly+BZZGcsTYS0nZednXCdRUrj2kTYgexELoZGk8a1iVC51uAZXIdR
+        0rg2pbQRUzn74TqNksa1KVW0Ra4qD9dplDSuTalFKMo1uI4jpHFtSqiYojib4TqPkMa1KbEBxdGNkRtw
+        JyjVu1U2Ha5NVVcRlrpujZ2C/gh68qdHfhdBY9WWfmi0reRO1kbazg/PBNyBO2GbqGZJhVu1ZC6aWCZX
+        pZol3WOsNSqOamOJjGqW1qCR6PKimhw3kH7QWBqvIlVlqHZa3ICapELrxl75NPpM6Gfd0G3U/p7/W1Q8
+        dRBNltDoXLrU6crUmixDHVXiKc3wwic5kdkEDdINvoQWNiFz+6aiZeg+6Da4e0L/QpsZqgpfiIGOPiy1
+        L6evw+hrMbpXpwmVbr6IHt+Hdm/VRm0H/iszXbp06dKl3Rka+gVqm79K94rt5gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>
